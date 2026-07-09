@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday!</title>
+
+    <!-- Google Fonts: Press Start 2P (pixel/retro style) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+
+    <!-- ===== BACKGROUND LAYER ===== -->
+    <div id="bg-pattern"></div>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main id="app">
+
+      <!-- Page Title -->
+      <h1 id="title">Happy Birthday to You!</h1>
+
+      <!-- ===== CAKE ILLUSTRATION ===== -->
+      <div id="cake-wrapper">
+        <div id="cake">
+
+          <!-- Candle (sits on top of the cake) -->
+          <div id="candle">
+            <div id="wick"></div>
+            <div id="flame"></div>
+            <div id="smoke"></div>
+          </div>
+
+          <!-- Cake tiers (CSS pixel art) -->
+          <div id="cake-tier-top"></div>
+          <div id="cake-tier-bottom"></div>
+
+        </div>
+      </div>
+      <!-- END CAKE ILLUSTRATION -->
+
+      <!-- Prompt text below the cake -->
+      <p id="prompt-text">Make a wish before you blow the candle</p>
+
+      <!-- Blow the Candle button -->
+      <button id="blow-btn">Blow the Candle 🎂</button>
+
+    </main>
+    <!-- END MAIN CONTENT -->
+
+    <!-- ===== WISH MODAL ===== -->
+    <div id="modal-backdrop">
+      <div id="modal">
+        <!-- The randomly selected birthday wish -->
+        <p id="wish-text"></p>
+
+        <!-- Dismiss button -->
+        <button id="close-btn">Close</button>
+      </div>
+    </div>
+    <!-- END WISH MODAL -->
+
+    <!-- App logic -->
+    <script src="script.js" defer></script>
+
+  </body>
+</html>
